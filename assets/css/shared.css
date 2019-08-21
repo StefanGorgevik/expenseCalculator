@@ -2,7 +2,6 @@ html, body {
     margin: 0;
     height: 100%;
     width: 100%;
-    color: #e5edf5;
     font-family: 'Roboto', sans-serif;
     background-color: #E5EDF5;
     overflow-x: hidden;
@@ -16,15 +15,9 @@ html, body {
     margin:auto;
     background-color: #fff;
     padding: 0;
-    align-self: center;
-    overflow-x: hidden;
-}
-#register{
-    margin-top:31px;
-    height: 730px;
 }
 #login{
-    margin-top:240px;
+    
 }
 .text-field,
 .primary-btn {
@@ -32,8 +25,7 @@ html, body {
 }
 .text-field {
     background: #fff;
-    border: 1.5px solid;
-    border-color: #c6c6c6;
+    border: 1.5px solid #c6c6c6;
     height: 34px;
     border-radius: 5px;
 }

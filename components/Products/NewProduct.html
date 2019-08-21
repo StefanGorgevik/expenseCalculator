@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="NewProduct.css">
+    <link rel="stylesheet" href="../../assets/css/shared.css">
+</head>
+<body>
+
+        <header>
+                <nav class="nav">
+                    <div class="buttons">
+                        <button class="main-buttons" id="products-btn">Products</button>
+                        <button class="main-buttons" id="expenses-btn">Expenses</button>
+                    </div>
+                    <div class="right-side">              
+                            <p><img id="profile-image" src="../../assets/images/small_profile.png" alt="profile-image">Gal Gadot</p>
+                    </div>
+                </nav>
+        </header>
+
+        <h2 id="new-products-h2">New Products</h2>
+
+        <main id="main-box">
+                <div class="box-container">
+                        <form>
+                            <p class="input-container">
+                                    <label class="text-field-input" for="product-name">Product Name</label>
+                                    <input class="text-field" type="text" name="product-name" id="product-name">
+                            </p>
+                            <p class="input-container">
+                                    <label class="text-field-input" for="product-description">Product Description</label>
+                                    <input class="text-field" type="text" name="product-description" id="product-description">
+                            </p>
+                            <p class="input-container">
+                                    <label class="text-field-input" for="product-type">Product Type</label>
+                                    <input class="text-field" type="text" name="product-type" id="product-type">
+                            </p>
+                            <p class="input-container">
+                                    <label class="text-field-input" for="product-date">Product Date</label>
+                                    <input class="text-field" type="date" name="product-date" id="product-date">
+                            </p>
+                            <p class="input-container">
+                                    <label class="text-field-input" for="product-price">Product Price</label>
+                                    <input class="text-field" type="number" name="product-price" id="product-price">
+                            </p>
+                            <button id="primary-button" class="primary-btn" type="submit">Create product</button>
+                        </form>
+                    </div>
+                    <div class="new-product-div">
+                        <span><i class="fas fa-plus-circle"></i></span>
+                        <h3>You are creating a new product</h3>
+                    </div>
+        </main>
+        <script src="https://kit.fontawesome.com/c449c1f62a.js"></script>
+</body>
+</html>
