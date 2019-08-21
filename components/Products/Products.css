@@ -2,35 +2,153 @@ html, body {
     margin: 0;
     height: 100%;
     width: 100%;
-    color: #e5edf5;
     font-family: 'Roboto', sans-serif;
     background-color: #E5EDF5;
     overflow-x: hidden;
 }
 
 header {
+    width: 100%;
     display: flex;
     background-color: #fff;
-    border: 1px solid black;
-    
+    justify-content: space-between;
+    height: 10%;
+}
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
 }
 
 .buttons {
     font-size: 15px;
-    
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    margin-left: 30px;
+    flex-wrap: nowrap;
 }
-button {
+.main-buttons {
     background-color: white;
+    height: 35px;
+    min-width: 18%;
+    text-transform: uppercase;
+    padding: 0px 10px;
+    border-radius: 5px;
+    font-weight: 700;
 }
 #expenses-btn {
     background: transparent;
-    border: 2px solid #576574;
+    border: 1.5px solid #576574;
     color: #576574;
+}
+#products-btn {
+    background:transparent;
+    border: 1.5px solid #1DD1A1;
+    color: #1DD1A1;
+    margin-right: 10px;
 }
 span,p {
     color: black;
 }
 
 .right-side {
-    display: inline;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+#profile-image {
+    width: 25px;
+    height: 25px;
+}
+
+/* table properties */
+
+.table {
+    width: 85%;
+    border-collapse: collapse; 
+    text-align: center;
+}
+.table tr td {
+    padding: 0;
+}
+.table thead{
+    border-bottom: 1px solid black;
+}
+.table thead th{
+    height: 50px;
+}
+.body-tr{
+    background-color: white;
+}
+
+.table .body-tr{
+    height: 50px;
+}
+.main-box{
+    display: flex;
+    justify-content: center;
+}
+
+.main-div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.main-div select{
+    height: 25px;
+    margin-top: 60px;
+    margin-right: 210px;
+    margin-bottom: 10px;
+    color: #8d8d8d;
+}
+
+.main-div h2 {
+    margin-left: 75px;
+    margin-top: 35px;
+}
+span{
+    margin-right: 10px;
+}
+
+.new-btn {
+    position: fixed;
+    bottom: 43px;
+    right: 115px; 
+    border: none;
+    font-size: 15px;
+    background-color: #576574;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.17);
+    width: 100px;
+    color: white;
+    font-weight: 600;
+    height: 50px;
+    min-width: 13%;
+    text-transform: uppercase;
+    padding: 0px 10px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+    button {
+       display: inline-block;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .buttons {
+       display: inline-block;
+       flex-wrap: wrap;
+       flex-direction: column;
+       flex: 1;
+    }
+    .right-side{
+        width: 30%;
+    }
 }
