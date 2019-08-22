@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>New Product</title>
     <link rel="stylesheet" href="NewProduct.css">
     <link rel="stylesheet" href="../../assets/css/shared.css">
 </head>
@@ -13,8 +13,8 @@
         <header>
                 <nav class="nav">
                     <div class="buttons">
-                        <button class="main-buttons" id="products-btn">Products</button>
-                        <button class="main-buttons" id="expenses-btn">Expenses</button>
+                        <a href="Products.html"><button class="main-buttons" id="products-btn">Products</button></a>
+                        <a href="../Expenses/Expenses.html"><button class="main-buttons" id="expenses-btn">Expenses</button></a>
                     </div>
                     <div class="right-side">              
                             <p><img id="profile-image" src="../../assets/images/small_profile.png" alt="profile-image">Gal Gadot</p>
@@ -22,10 +22,11 @@
                 </nav>
         </header>
 
-        <h2 id="new-products-h2">New Products</h2>
+        <h3 id="new-products-h3">New Products</h3>
 
         <main id="main-box">
                 <div class="box-container">
+                        <div class="form-box">
                         <form>
                             <p class="input-container">
                                     <label class="text-field-input" for="product-name">Product Name</label>
@@ -49,6 +50,7 @@
                             </p>
                             <button id="primary-button" class="primary-btn" type="submit">Create product</button>
                         </form>
+                </div>
                     </div>
                     <div class="new-product-div">
                         <span><i class="fas fa-plus-circle"></i></span>

@@ -3,7 +3,7 @@ html, body {
     height: 100%;
     width: 100%;
     font-family: 'Roboto', sans-serif;
-    background-color: #E5EDF5;
+    background-color:#E5EDF5;
     overflow-x: hidden;
 }
 
@@ -12,7 +12,7 @@ header {
     display: flex;
     background-color: #fff;
     justify-content: space-between;
-    height: 10%;
+    min-height: 45px;
     color: black;
 }
 .nav {
@@ -21,6 +21,9 @@ header {
     justify-content: flex-end;
     align-content: center;
     align-items: center;
+}
+button {
+    cursor: pointer;
 }
 
 .buttons {
@@ -69,14 +72,13 @@ span,p {
 
 /* Main content*/
 
-
 #main-box {
     display: flex;
-    width: 50%;
-    height: 70%;
+    width: 1020px;
+    max-height: 690px;
     margin: auto;
-    border-radius: 6px;
     margin-left: 200px;
+    margin-bottom: 10px;
 }
 .box-container{
     display: flex;
@@ -86,43 +88,47 @@ span,p {
     margin:auto;
     background-color: #fff;
     padding: 0;
-    height: 620px;
-    width: 575px;
-}
-form{
-    margin-left: 50px;
+    height: 600px;
+    width: 570px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 
 .new-product-div {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items:center;
-    background-color: #C6C6C6;
-    border-radius: 6px;
+    background-color: #e9e7e7;
     text-align: center;
-    color:#8d8d8d;
-    width: 525px;
-    height: 620px;
+    color:#9a9a9a;
+    width: 450px;
+    height: 600px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
-#new-products-h2{
+#new-products-h3{
     margin-left: 200px;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 .new-product-div span i{
     font-size: 50px;
-    display: inline-block;
+    color: #9a9a9a;
 }
-.new-product-div span {
-    display: inline-block;
+.new-product-div h3 {
+    font-family: 'Roboto', sans-serif;
 }
 
 #primary-button {
-    margin-top:60px;
+    margin-top:40px;
 }
-
+.form-box {
+    margin-left: 50px;
+}
 
 
 

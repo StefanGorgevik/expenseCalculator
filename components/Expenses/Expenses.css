@@ -7,12 +7,15 @@ html, body {
     overflow-x: hidden;
 }
 
+/* header */
+
 header {
     width: 100%;
     display: flex;
     background-color: #fff;
     justify-content: space-between;
     min-height: 45px;
+    margin-bottom: 30px;
 }
 .nav {
     display: flex;
@@ -74,7 +77,7 @@ span,p {
 .table {
     width: 85%;
     border-collapse: collapse; 
-    text-align: center;
+    text-align: center;  
 }
 .table tr td {
     padding: 0;
@@ -123,33 +126,66 @@ tbody td a{
     margin-right: 5px;
     color: black;
 }
-.new-btn {
-    position: fixed;
-    bottom: 43px;
-    right: 115px; 
-    border: none;
-    font-size: 15px;
-    background-color: #576574;
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.17);
-    width: 100px;
-    color: white;
-    font-weight: 600;
-    height: 50px;
-    min-width: 13%;
-    text-transform: uppercase;
-    padding: 0px 10px;
-    border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
-}
-.new-btn a {
-    text-decoration: none;
-    color: white;
+
+/* expenses div */
+
+h3 {
+    margin-left: 115px;
+    margin-bottom: 40px;
 }
 
-.new-product-div {
+.expenses-div {
     display: flex;
-    justify-content: center;
     align-content: center;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+.expenses-btns {
+    margin-right: 540px;
+}
+#monthly-btn {
+    background: #1DD1A1;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#yearly-btn {
+    background: #C9E5DD;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+button {
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.transparent-div {
+    position: fixed;
+    bottom: 0;
+    right: 0; 
+    font-size: 15px;
+    background-color: #68718b transparent;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.17);
+    color: white;
+    height: 70px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.transparent-div p{
+    display: block;
+    color: white;
+    text-align: right;
+    margin-right: 80px;
+    padding: 0;
 }
 
 @media screen and (max-width: 800px) {
@@ -157,7 +193,6 @@ tbody td a{
        display: inline-block;
     }
 }
-
 
 @media screen and (max-width: 700px) {
     .buttons {

@@ -1,5 +1,6 @@
 html, body {
     margin: 0;
+    padding: 0;
     height: 100%;
     width: 100%;
     font-family: 'Roboto', sans-serif;
@@ -8,20 +9,20 @@ html, body {
 }
 .box{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 370px;
+    margin: auto;
+    width: 420px;
     border-radius: 6px;
-    margin:auto;
     background-color: #fff;
-    padding: 0;
 }
-#login{
-    
+form{
+    display: inline-block;
+    margin: auto;
 }
 .text-field,
 .primary-btn {
-    width: 300px;
+    width: 330px;
 }
 .text-field {
     background: #fff;
@@ -43,7 +44,9 @@ html, body {
     border: none;
     text-transform: uppercase;
 }
-
+button {
+    cursor: pointer;
+}
 .text-field,
 .text-field-input {
     display: block;
@@ -53,12 +56,10 @@ html, body {
     margin-bottom: 8.5px;
     color: #8d8d8d;
 }
-
 .textDiv {    
     color:#8d8d8d;
     text-align:center;
     margin-top: 35px;
-    position: relative;
     font-family: 'Roboto', sans-serif;
 }
 
