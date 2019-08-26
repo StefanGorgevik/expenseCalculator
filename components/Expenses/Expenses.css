@@ -7,101 +7,6 @@ html, body {
     overflow-x: hidden;
 }
 
-/* header */
-
-header {
-    width: 100%;
-    display: flex;
-    background-color: #fff;
-    justify-content: space-between;
-    min-height: 45px;
-    margin-bottom: 30px;
-}
-.nav {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    align-content: center;
-    align-items: center;
-}
-button {
-    cursor: pointer;
-}
-
-.buttons {
-    font-size: 15px;
-    width: 100%;
-    align-content: center;
-    align-items: center;
-    margin-left: 50px;
-    flex-wrap: nowrap;
-}
-.main-buttons {
-    background-color: white;
-    height: 35px;
-    min-width: 18%;
-    text-transform: uppercase;
-    padding: 0px 10px;
-    border-radius: 5px;
-    font-weight: 700;
-}
-#expenses-btn {
-    background: transparent;
-    border: 1.5px solid #576574;
-    color: #576574;
-}
-#products-btn {
-    background:transparent;
-    border: 1.5px solid #1DD1A1;
-    color: #1DD1A1;
-    margin-right: 10px;
-}
-span,p {
-    color: black;
-}
-
-.right-side {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 100px;
-}
-
-#profile-image {
-    width: 25px;
-    height: 25px;
-}
-
-/* table properties */
-
-.table {
-    width: 85%;
-    border-collapse: collapse; 
-    text-align: center;  
-}
-.table tr td {
-    padding: 0;
-}
-.table thead{
-    border-bottom: 1px solid black;
-}
-.table thead th{
-    height: 50px;
-}
-.body-tr{
-    background-color: white;
-    border-bottom: 5px solid #E5EDF5;
-}
-
-.table .body-tr{
-    height: 50px;
-}
-
-.main-box{
-    display: flex;
-    justify-content: center;
-}
-
 .main-div {
     display: flex;
     width: 100%;
@@ -117,62 +22,73 @@ span,p {
 .main-div option {
     padding: 10px;
 }
-
 .main-div h3 {
-    margin-left: 120px;
+    margin-left: 140px;
     margin-top: 40px;
-}
-tbody td a{
-    margin-right: 5px;
-    color: black;
 }
 
 /* expenses div */
 
-h3 {
-    margin-left: 115px;
+#expenses-h3 {
+    margin-left: 145px;
     margin-bottom: 40px;
 }
-
 .expenses-div {
     display: flex;
-    align-content: center;
     align-items: center;
     width: 100%;
-    justify-content: space-around;
+    margin-left: 140px;
+    font-family: 'Roboto', sans-serif;
 }
-.expenses-btns {
-    margin-right: 540px;
+.expenses-div button {
+    width: 130px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
 }
+
 #monthly-btn {
     background: #1DD1A1;
     color: #fff;
     font-size: 15px;
-    font-weight: 500;
     text-transform: uppercase;
 }
 #yearly-btn {
     background: #C9E5DD;
     color: #fff;
     font-size: 15px;
-    font-weight: 500;
     text-transform: uppercase;
 }
-
-button {
-    width: 130px;
-    height: 40px;
-    border: none;
+.select-div{
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+.select-div label {
+    width: 30%;
+    padding-left: 30px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+#month-select {
+    height: 35px;
+    background: #fff; 
+    border: 2px solid #C6C6C6;
+    width: 35%;
+    color:  #8D8D8D;
+    font-size: 16px;
     border-radius: 5px;
 }
-
-
+#month-select option {
+    padding: 50px;
+}
 .transparent-div {
     position: fixed;
     bottom: 0;
     right: 0; 
     font-size: 15px;
-    background-color: #68718b;
+    background-color: #95979A;
     opacity:0.8;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.17);
     color: white;

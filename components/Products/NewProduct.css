@@ -7,75 +7,12 @@ html, body {
     overflow-x: hidden;
 }
 
-header {
-    width: 100%;
-    display: flex;
-    background-color: #fff;
-    justify-content: space-between;
-    min-height: 45px;
-    color: black;
-}
-.nav {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    align-content: center;
-    align-items: center;
-}
-button {
-    cursor: pointer;
-}
-
-.buttons {
-    font-size: 15px;
-    width: 100%;
-    align-content: center;
-    align-items: center;
-    margin-left: 50px;
-    flex-wrap: nowrap;
-}
-.main-buttons {
-    background-color: white;
-    height: 35px;
-    min-width: 18%;
-    text-transform: uppercase;
-    padding: 0px 10px;
-    border-radius: 5px;
-    font-weight: 700;
-}
-#expenses-btn {
-    background: transparent;
-    border: 1.5px solid #576574;
-    color: #576574;
-}
-#products-btn {
-    background:transparent;
-    border: 1.5px solid #1DD1A1;
-    color: #1DD1A1;
-    margin-right: 10px;
-}
-span,p {
-    color: black;
-}
-
-.right-side {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 100px;
-}
-
-#profile-image {
-    width: 25px;
-    height: 25px;
-}
-
 /* Main content*/
 
 #main-box {
     display: flex;
     width: 1020px;
-    max-height: 690px;
+    max-height: 800px;
     margin: auto;
     margin-left: 200px;
     margin-bottom: 10px;
@@ -112,7 +49,7 @@ span,p {
 }
 #new-products-h3{
     margin-left: 200px;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     margin-top: 25px;
 }
 .new-product-div span i{
@@ -121,6 +58,7 @@ span,p {
 }
 .new-product-div h3 {
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 #primary-button {
@@ -129,14 +67,6 @@ span,p {
 .form-box {
     margin-left: 50px;
 }
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 800px) {
     button {
