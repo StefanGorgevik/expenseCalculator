@@ -15,10 +15,6 @@ const main = document.querySelector("#main")
 const Routes = () => {
     return (
         <Router>
-            <Header/>
-            <Products/>
-            <Table/>
-        </React.Fragment>
             <Switch>
                 <Route exact path="/" component={Login}/> 
                 <Route exact path="/register" component={Register}/> 
