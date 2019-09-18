@@ -14,7 +14,8 @@ const Main = () => {
     return(
         <React.Fragment>
             <Header/>
-            <NewProduct/>
+            <Products/>
+            <Table/>
         </React.Fragment>
     )
 }
