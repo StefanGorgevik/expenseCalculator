@@ -15,6 +15,7 @@ const main = document.querySelector("#main")
 const Routes = () => {
     return (
         <Router>
+            <Header/>
             <Switch>
                 <Route exact path="/" component={Login}/> 
                 <Route exact path="/register" component={Register}/> 
