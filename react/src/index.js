@@ -15,21 +15,29 @@ const main = document.querySelector("#main")
 const Routes = () => {
     return (
         <Router>
-            <Header/>
             <Switch>
                 <Route exact path="/" component={Login}/> 
                 <Route exact path="/register" component={Register}/> 
-                <Route exact path="/new-product" component={NewProduct}/> 
+
+                <Route exact path="/new-product" render={() => 
+                    <React.Fragment>
+                        <Header/>
+                        <NewProduct/>
+                    </React.Fragment>
+                }/> 
+
                 <Route exact path="/products" render={(props) => 
                         <React.Fragment>
+                            <Header/>  
                             <Products {...props}/>
                             <Table {...props}/>
                         </React.Fragment>
                     }/> 
-                <Route exact path="/expenses" render={(props) => 
+                <Route exact path="/expenses" render={() => 
                         <React.Fragment>
-                            <Expenses {...props}/>
-                            <Table {...props}/>
+                            <Header/>
+                            <Expenses/>
+                            <Table />
                         </React.Fragment>
                     }/> 
             </Switch>
