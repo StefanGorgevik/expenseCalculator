@@ -4,9 +4,9 @@ import '../assets/styles/products.css'
 const Products = () => {
     return (
         <React.Fragment>
-            <div class="main-div">
+            <div className="main-div">
                 <h3>Products</h3>
-                <label for="sort">Filter by:
+                <label htmlFor="sort">Filter by:
             <select name="sort" id="sort">
                         <option>Year</option>
                         <option>Highest Price</option>

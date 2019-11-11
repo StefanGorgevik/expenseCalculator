@@ -1,5 +1,6 @@
 import React from 'react'
 import '../assets/styles/inputs-shared.css'
+import { Link } from 'react-router-dom'
 
 const Register = () => {
     return (
@@ -40,7 +41,7 @@ const Register = () => {
 
     
             <div className="textDiv">
-                <p>Or if you already have an account, <a className="additional-info" href="../Login/Login.html">Sign in</a></p>
+                <p>Or if you already have an account, <Link className="additional-info" to="/">Sign in</Link></p>
             </div>
         </React.Fragment>
     )
