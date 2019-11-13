@@ -29,3 +29,46 @@ module.exports = {
       ]
     }  
 };
+
+const mongoose = require('mongoose') 
+
+mongoose.connect('mongodb+srv://stefan_gg:furious7@cluster0-ptuut.mongodb.net/expenses?retryWrites=true&w=majority',
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    })
+    .then(res => {
+        console.log(res);
+    })
+    .catch(err => {
+        console.log(err)
+    })
+
+const Product = mongoose.model(
+    "product", new mongoose.Schema({
+        name: String,
+        type: String,
+        description: String,
+        date: Date,
+        price: Number
+    },
+        {
+            collection: "products"
+        })
+)
+
+const prod = new Product({
+    name: "Coca-Cola",
+    type: "Drink",
+    description: "Carbonated soft drink",
+    date: new Date("2019-04-19T00:00:00Z"),
+    price: 75
+})
+
+prod.save(err => {
+    if(err){
+        console.log(err);
+        return;
+    }
+    console.log("product saved")
+})

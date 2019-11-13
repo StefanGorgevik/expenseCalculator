@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 
 import Header from './components/Header'
 import Table from './components/Table'
@@ -16,30 +16,30 @@ const Routes = () => {
     return (
         <Router>
             <Switch>
-                <Route exact path="/" component={Login}/> 
-                <Route exact path="/register" component={Register}/> 
+                <Route exact path="/" component={Login} />
+                <Route exact path="/register" component={Register} />
 
-                <Route exact path="/new-product" render={() => 
+                <Route exact path="/new-product" render={() =>
                     <React.Fragment>
-                        <Header/>
-                        <NewProduct/>
+                        <Header />
+                        <NewProduct />
                     </React.Fragment>
-                }/> 
+                } />
 
-                <Route exact path="/products" render={(props) => 
-                        <React.Fragment>
-                            <Header/>  
-                            <Products {...props}/>
-                            <Table {...props}/>
-                        </React.Fragment>
-                    }/> 
-                <Route exact path="/expenses" render={() => 
-                        <React.Fragment>
-                            <Header/>
-                            <Expenses/>
-                            <Table />
-                        </React.Fragment>
-                    }/> 
+                <Route exact path="/products" render={(props) =>
+                    <React.Fragment>
+                        <Header />
+                        <Products {...props} />
+                        <Table {...props} />
+                    </React.Fragment>
+                } />
+                <Route exact path="/expenses" render={() =>
+                    <React.Fragment>
+                        <Header />
+                        <Expenses />
+                        <Table />
+                    </React.Fragment>
+                } />
             </Switch>
         </Router>
     )
@@ -54,4 +54,4 @@ const Routes = () => {
 //     )
 // }
 
-ReactDOM.render(<Routes/>, main)
+ReactDOM.render(<Routes />, main)
