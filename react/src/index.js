@@ -1,57 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 
-import Header from './components/Header'
-import Table from './components/Table'
-import Login from './components/Login'
-import Register from './components/Register'
-import Expenses from './components/Expenses'
-import Products from './components/Products'
-import NewProduct from './components/NewProduct'
+import Layout from './containers/Layout'
+
+import store from './redux/store'
+import { Provider } from 'react-redux'
 
 const main = document.querySelector("#main")
 
-const Routes = () => {
-    return (
-        <Router>
-            <Switch>
-                <Route exact path="/" component={Login} />
-                <Route exact path="/register" component={Register} />
-
-                <Route exact path="/new-product" render={() =>
-                    <React.Fragment>
-                        <Header />
-                        <NewProduct />
-                    </React.Fragment>
-                } />
-
-                <Route exact path="/products" render={(props) =>
-                    <React.Fragment>
-                        <Header />
-                        <Products {...props} />
-                        <Table {...props} />
-                    </React.Fragment>
-                } />
-                <Route exact path="/expenses" render={() =>
-                    <React.Fragment>
-                        <Header />
-                        <Expenses />
-                        <Table />
-                    </React.Fragment>
-                } />
-            </Switch>
-        </Router>
-    )
-}
-
-// const Main = () => {
-//     return(
-//         <React.Fragment>
-//             <Header/>
-//             <NewProduct/>
-//         </React.Fragment>
-//     )
-// }
-
-ReactDOM.render(<Routes />, main)
+// ReactDOM.render(<Layout />, main)
+ReactDOM.render(<Provider store={store}><Layout /></Provider>, main)

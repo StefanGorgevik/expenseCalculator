@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assets/styles/inputs-shared.css'
+import '../../assets/styles/inputs-shared.css'
 import { Link } from 'react-router-dom'
 
 const Register = () => {

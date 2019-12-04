@@ -1,15 +1,15 @@
-.table {
+.Table {
     width: 85%;
     border-collapse: collapse; 
     text-align: center;  
 }
-.table tr td {
+.Table tr td {
     padding: 0;
 }
-.table thead{
+.Table thead{
     border-bottom: 1px solid black;
 }
-.table thead th{
+.Table thead th{
     height: 50px;
 }
 .body-tr{
@@ -21,7 +21,7 @@
     background-color: inherit;
 }
 
-.table .body-tr{
+.Table .body-tr{
     height: 50px;
 }
 
@@ -30,7 +30,14 @@
     justify-content: center;
 }
 
-tbody td a{
-    margin-right: 10px;
-    color: black;
+.Table
+#edit-button,
+#delete-button {
+    background-color: inherit;
+    border: none;
+    
+}
+
+.Table i .far .fa-edit {
+    height: 20px;
 }
