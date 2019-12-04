@@ -4,8 +4,7 @@ import './New-product.css'
 const EditProduct = () => {
     return (
         <React.Fragment>
-            <h3 id="new-products-h3">New Product</h3>
-
+            <h3 id="new-products-h3">Edit Product</h3>
             <main id="main-box">
                 <div className="box-container">
                     <div className="form-box">
@@ -30,13 +29,13 @@ const EditProduct = () => {
                                 <label className="text-field-input" htmlFor="product-price">Product Price</label>
                                 <input className="text-field" type="number" name="product-price" id="product-price" />
                             </p>
-                            <button id="primary-button" className="primary-btn" type="submit">Create product</button>
+                            <button id="primary-button" className="primary-btn" type="submit">Edit product</button>
                         </form>
                     </div>
                 </div>
                 <div className="new-product-div">
                     <span><i className="fas fa-plus-circle"></i></span>
-                    <h3>You are creating a new product</h3>
+                    <h3>You are editing a product</h3>
                 </div>
             </main>
             <script src="https://kit.fontawesome.com/c449c1f62a.js"></script>

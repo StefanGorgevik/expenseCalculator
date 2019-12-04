@@ -31,7 +31,7 @@ class NewProduct extends React.Component {
     render() {
     return (
         <React.Fragment>
-            <h3 id="new-products-h3">New Product</h3>
+            <h3 id="new-products-h3">Edit Product</h3>
             <main id="main-box">
                 <div className="box-container">
                     <div className="form-box">
